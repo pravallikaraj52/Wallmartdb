@@ -1,1 +1,1 @@
-drop table truckss;
+drop table trucky;
