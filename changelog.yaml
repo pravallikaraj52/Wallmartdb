@@ -1,0 +1,43 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1.0
+      author: igcb
+      changes:
+        - tagDatabase:  
+            tag: v1.0
+        - sqlFile:
+            stripComments: true
+            runOnChange: true
+            path: changes/1.0/script/1_request_1.sql
+            dbms: postgresql
+      rollback:
+        - tagDatabase:  
+            tag: v1.0
+        - sqlFile:
+            failOnError: true
+            stripComments: true
+            runOnChange: true
+            path: changes/1.0/rollback/1_request_rollback_1.sql
+            dbms: postgresql
+  - changeSet:
+      id: 2.0
+      author: igcb
+      changes:
+        - tagDatabase:  
+            tag: v2.0
+        - sqlFile:
+            failOnError: true
+            stripComments: true
+            runOnChange: true
+            path: changes/2.0/script/2_request_1.sql
+            dbms: postgresql
+      rollback:
+        - tagDatabase:  
+            tag: v2.0
+        - sqlFile:
+            failOnError: true
+            stripComments: true
+            runOnChange: true
+            path: changes/2.0/rollback/2_request_rollback_1.sql
+            dbms: postgresql
+   
