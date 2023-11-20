@@ -1,1 +1,1 @@
-drop table train;
+drop table cycle;
