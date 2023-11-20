@@ -1,1 +1,1 @@
-drop table truck
+drop table truckss;
