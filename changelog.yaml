@@ -19,5 +19,3 @@ databaseChangeLog:
             runOnChange: true
             path: changes/1.0/rollback/1_request_rollback_1.sql
             dbms: postgresql
- 
-   
