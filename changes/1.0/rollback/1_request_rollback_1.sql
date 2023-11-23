@@ -1,1 +1,1 @@
-drop table cycle;
+drop table Bike;
